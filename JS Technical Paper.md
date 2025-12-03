@@ -218,15 +218,15 @@
 
     - Utility methods in JavaScript are reusable functions designed to perform common, specific tasks, often simplifying complex operations       and improving code readability and maintainability.
 
-    | Method | Mutable? | Example |
-    | ------ | -------- | ------- |
-    | pop() | Yes | arr.pop() |
-    | push() | Yes	| arr.push(4) |
-    | concat() | No | arr.concat(arr2) |
-    | slice() |	No | arr.slice(1,3) |
-    | splice() | Yes | arr.splice(1,1) |
-    | join() | No | arr.join('-') |
-    | flat() | No |	arr.flat(2) |
+      | Method | Mutable? | Example |
+      | ------ | -------- | ------- |
+      | pop() | Yes | arr.pop() |
+      | push() | Yes	| arr.push(4) |
+      | concat() | No | arr.concat(arr2) |
+      | slice() |	No | arr.slice(1,3) |
+      | splice() | Yes | arr.splice(1,1) |
+      | join() | No | arr.join('-') |
+      | flat() | No |	arr.flat(2) |
 
     - ``` javascript
 
