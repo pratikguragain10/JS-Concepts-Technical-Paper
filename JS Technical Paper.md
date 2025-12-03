@@ -218,35 +218,35 @@
 
     - Utility methods in JavaScript are reusable functions designed to perform common, specific tasks, often simplifying complex operations       and improving code readability and maintainability.
 
-| Method | Mutable? | Example |
-| ------ | -------- | ------- |
-| pop() | Yes | arr.pop() |
-| push() | Yes	| arr.push(4) |
-| concat() | No | arr.concat(arr2) |
-| slice() |	No | arr.slice(1,3) |
-| splice() | Yes | arr.splice(1,1) |
-| join() | No | arr.join('-') |
-| flat() | No |	arr.flat(2) |
+    | Method | Mutable? | Example |
+    | ------ | -------- | ------- |
+    | pop() | Yes | arr.pop() |
+    | push() | Yes	| arr.push(4) |
+    | concat() | No | arr.concat(arr2) |
+    | slice() |	No | arr.slice(1,3) |
+    | splice() | Yes | arr.splice(1,1) |
+    | join() | No | arr.join('-') |
+    | flat() | No |	arr.flat(2) |
 
-    ``` javascript
+    - ``` javascript
 
-        Finding
-        arr.find(x => x > 5)
-        arr.indexOf(10)
-        arr.includes(3)
-        arr.findIndex(x => x.name === "Sam")
+         Finding
+         arr.find(x => x > 5)
+         arr.indexOf(10)
+         arr.includes(3)
+         arr.findIndex(x => x.name === "Sam")
 
-        Higher Order
-        arr.forEach(x => console.log(x))
-        arr.filter(x => x>5)
-        arr.map(x => x*2)
-        arr.reduce((acc,val) => acc + val, 0)
-        arr.sort((a,b) => a-b)
+         Higher Order
+         arr.forEach(x => console.log(x))
+         arr.filter(x => x>5)
+         arr.map(x => x*2)
+         arr.reduce((acc,val) => acc + val, 0)
+         arr.sort((a,b) => a-b)
 
-        Chaining
-        nums.filter(n => n>5).map(n => n*2).reduce((a,b) => a+b)  
+         Chaining
+         nums.filter(n => n>5).map(n => n*2).reduce((a,b) => a+b)  
 
-    ```
+     ```
 
 ---
 
@@ -314,10 +314,10 @@
 
      ```
 
-| throw | vs | throw new Error |
-| ----- | -- | --------------- |
-| throw "Message" |	throw new Error("Message") |
-| throws string | throws error object (best practice)|
+  | throw | vs | throw new Error |
+  | ----- | -- | --------------- |
+  | throw "Message" |	 | throw new Error("Message") |
+  | throws string | | throws error object (best practice)|
 
 --- 
 
@@ -402,10 +402,10 @@
 
 ## 24. Arrow vs Regular Functions
 
-    | Arrow | Regular |
-    | ----- | ------- |
-    | No this binding |	Own this |
-    | Short syntax | Longer |
+  | Arrow | Regular |
+  | ----- | ------- |
+  | No this binding |	Own this |
+  | Short syntax | Longer |
 
 ---
 
@@ -427,9 +427,9 @@
 
 ## 26. null vs undefined
 
-    | null | undefined |
-    | ---- | --------- |
-    | intentional empty | not assigned |
+  | null | undefined |
+  | ---- | --------- |
+  | intentional empty | not assigned |
 
 ---
 
