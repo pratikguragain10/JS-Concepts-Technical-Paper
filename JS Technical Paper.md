@@ -402,6 +402,9 @@
 
 ## 24. Arrow vs Regular Functions
 
+ - Normal Function: Uses the function keyword.
+ - Arrow Function: Uses the => syntax, often more concise, especially for single-expression functions.
+
   | Arrow | Regular |
   | ----- | ------- |
   | No this binding |	Own this |
@@ -426,6 +429,9 @@
 ---
 
 ## 26. null vs undefined
+
+- Undefined indicates that a variable has been declared but has not yet been assigned a value, or that a property of an object does not exist.
+- Null represents the intentional absence of any object value.
 
   | null | undefined |
   | ---- | --------- |
