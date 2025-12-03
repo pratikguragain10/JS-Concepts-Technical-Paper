@@ -405,10 +405,10 @@
  - Normal Function: Uses the function keyword.
  - Arrow Function: Uses the => syntax, often more concise, especially for single-expression functions.
 
-  | Arrow | Regular |
-  | ----- | ------- |
-  | No this binding |	Own this |
-  | Short syntax | Longer |
+    | Arrow | Regular |
+    | ----- | ------- |
+    | No this binding |	Own this |
+    | Short syntax | Longer |
 
 ---
 
