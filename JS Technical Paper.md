@@ -26,7 +26,6 @@
         let data = null;         // null
         let x;                   // undefined
         let user = {id: 1};      // object
-
     ```
 
 - Real-Life Example
