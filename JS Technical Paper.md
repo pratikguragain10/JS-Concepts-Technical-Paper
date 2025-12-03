@@ -149,9 +149,11 @@
 ## 9. Different Ways of Declaring Functions
 
     ``` javascript
+
         function normal() {}
         const expr = function() {}
         const arrow = () => {}
+        
     ```
 
 ---
@@ -434,7 +436,7 @@
     ``` javascript
 
         function sum(...nums){}
-        
+
     ```
 
 ---
