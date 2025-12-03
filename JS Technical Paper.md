@@ -153,7 +153,6 @@
         function normal() {}
         const expr = function() {}
         const arrow = () => {}
-        
     ```
 
 ---
