@@ -249,7 +249,6 @@
          nums.filter(n => n>5).map(n => n*2).reduce((a,b) => a+b)  
 
      ```
-
 ---
 
 ## 14. Popular String Methods
