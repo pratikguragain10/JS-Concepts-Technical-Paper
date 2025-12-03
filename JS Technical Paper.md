@@ -6,6 +6,8 @@
 
 - JavaScript supports dynamic typing—variables can store any type.
 
+- A particular kind of data item, as defined by the values it can take.
+
 - Primary Data Types:
     - Number
     - String
