@@ -185,11 +185,13 @@
 ## 11. Different Types of Loops
 
     ``` javascript
+
         for(let i=0;i<5;i++) {}
         for(let index in array) {}
         for(let value of array) {}
         array.forEach(item => {})
         while(condition) {}
+
     ```
 
 ---
@@ -214,6 +216,7 @@
 | flat() | No |	arr.flat(2) |
 
     ``` javascript
+
         Finding
         arr.find(x => x > 5)
         arr.indexOf(10)
@@ -228,7 +231,8 @@
         arr.sort((a,b) => a-b)
 
         Chaining
-        nums.filter(n => n>5).map(n => n*2).reduce((a,b) => a+b)    
+        nums.filter(n => n>5).map(n => n*2).reduce((a,b) => a+b)  
+
     ```
 
 ---
@@ -247,10 +251,12 @@
 ## 15. Popular Object Methods
 
     ``` javascript
+
         Object.keys(obj)      // immutable
         Object.values(obj)
         Object.entries(obj)
         Object.assign({},obj) // immutable copy
+
     ```
 
 ---
@@ -275,12 +281,14 @@
 ## 18. Error Handling
 
     ``` javascript
+
         try{
             throw new Error("Invalid input");
         }
         catch(error){
             console.error(error.message);
         }
+
     ```
 
 | throw | vs | throw new Error |
@@ -293,7 +301,9 @@
 ## 19. Spread Operator
 
     ``` javascript
+
         let arr2 = [...arr1]
+
     ```
 
 ---
@@ -301,7 +311,9 @@
 ## 20. Template Literals
 
     ``` javascript
+
         let msg = `Hello ${name}`
+
     ```
 
 ---
@@ -309,7 +321,9 @@
 ## 21. Default Parameters
 
     ``` javascript
+
         function greet(name="guest"){}
+
     ```
 
 ---
@@ -317,7 +331,9 @@
 ## 22. Destructuring
 
     ``` javascript
+
         const {name, age} = person
+
     ```
 
 ---
@@ -325,6 +341,7 @@
 ## 23. Closures
 
     ``` javascript
+
         function outer(){
             let x = 10;
         return function inner(){ console.log(x); }
@@ -345,8 +362,10 @@
 ## 25. === vs ==
 
     ``` javascript
+
         0 == false   // true
         0 === false  // false
+
     ```
 
 ---
@@ -361,8 +380,10 @@
 ## 27. Modules
 
     ``` javascript
+
         module.exports = add;
         const add = require("./math")
+
     ```
 
 ---
@@ -370,7 +391,9 @@
 ## 28. Console Methods
 
     ``` javascript
+
         console.log(), console.error(), console.warn(), console.table()
+
     ```
 
 ---
@@ -387,8 +410,10 @@
 ## 30. Passing Functions to Functions
 
     ``` javascript
+
         function execute(fn){ fn(); }
         execute(() => console.log("run"));
+
     ```
 
 ---
@@ -396,8 +421,10 @@
 ## 31. Named vs Anonymous Functions
 
     ``` javascript
+
         function named(){}
         const anon = function(){}
+
     ```
 
 ---
@@ -405,7 +432,9 @@
 ## 32. Variable Number of Arguments
 
     ``` javascript
+
         function sum(...nums){}
+        
     ```
 
 ---
