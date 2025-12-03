@@ -147,7 +147,7 @@
 
 ## 9. Different Ways of Declaring Functions
 
-    ``` javascript
+-   ``` javascript
 
         function normal() {}
         const expr = function() {}
