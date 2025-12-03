@@ -96,10 +96,12 @@
 
 - Falsy Values:
 
+    - A falsy value is a value that is considered false when encountered in a Boolean context.
     - 0, "", null, undefined, false, NaN
 
 - Truthy Values:
 
+    -In JavaScript, a truthy value is a value that is considered true when encountered in a Boolean context.
     - Everything else (e.g., "Hello", [], {}, 1)
 
 - Simple Example
@@ -159,6 +161,9 @@
 ## 10. Pass by Value vs Pass by Reference
 
 - Pass by Value
+
+    - When a variable is passed by value, a copy of the actual value is passed to the function. 
+    - Any changes made to the parameter inside the function do not affect the original variable.
     
     ``` javascript
 
@@ -170,6 +175,9 @@
     ```
 
 - Pass by Reference
+
+    - When a variable is passed by reference, a reference to the actual data is passed. 
+    - This means changes made to the parameter inside the function affect the original variable.
 
     ``` javascript
 
@@ -184,7 +192,7 @@
 
 ## 11. Different Types of Loops
 
-    ``` javascript
+ -   ``` javascript
 
         for(let i=0;i<5;i++) {}
         for(let index in array) {}
@@ -192,7 +200,7 @@
         array.forEach(item => {})
         while(condition) {}
 
-    ```
+     ```
 
 ---
 
@@ -205,6 +213,11 @@
 ---
 
 ## 13. Popular Array Utility Methods
+
+- Utility Methods
+
+    - Utility methods in JavaScript are reusable functions designed to perform common, specific tasks, often simplifying complex operations       and improving code readability and maintainability.
+
 | Method | Mutable? | Example |
 | ------ | -------- | ------- |
 | pop() | Yes | arr.pop() |
@@ -250,14 +263,18 @@
 
 ## 15. Popular Object Methods
 
-    ``` javascript
+- In JavaScript, object methods are functions that are stored as properties within an object.
+
+- Simple Example
+
+   ``` javascript
 
         Object.keys(obj)      // immutable
         Object.values(obj)
         Object.entries(obj)
         Object.assign({},obj) // immutable copy
 
-    ```
+   ```
 
 ---
 
@@ -274,13 +291,19 @@
 
 ## 17. Mutable vs Immutable
 
-- Mutable: modifies original push, pop, splice, sort
+- Mutable: Mutable objects are those whose state or content can be modified after they are created. 
+           This means you can change their properties, values, or elements without creating a new object in memory. 
 
-- Immutable: returns new value map, filter, concat, slice
+- Immutable: Immutable values are those whose content cannot be changed after they are created. 
+             Any operation that appears to "modify" an immutable value actually results in the creation of a new value, leaving the                      original unchanged.
 
 ## 18. Error Handling
 
-    ``` javascript
+- Error handling in JavaScript allows managing unexpected issues during code execution, preventing crashes, and improving user experience.
+
+- Simple Example
+
+     ``` javascript
 
         try{
             throw new Error("Invalid input");
@@ -289,7 +312,7 @@
             console.error(error.message);
         }
 
-    ```
+     ```
 
 | throw | vs | throw new Error |
 | ----- | -- | --------------- |
@@ -300,45 +323,71 @@
 
 ## 19. Spread Operator
 
-    ``` javascript
+- The spread operator in JavaScript, denoted by three dots (...), is a powerful syntax used to expand or "spread out" the elements of an iterable (like an array or string) or the properties of an object into places where multiple elements or properties are expected. 
+
+- Simple Example
+
+     ``` javascript
 
         let arr2 = [...arr1]
 
-    ```
+     ```
 
 ---
 
 ## 20. Template Literals
 
-    ``` javascript
+- Template literals, also known as template strings, are a feature in JavaScript (introduced in ES6/ES2015) that provide an enhanced way to work with strings compared to traditional string concatenation.
+
+- Enclosed by Backticks: Template literals are defined using backticks (`` ` ``) instead of single or double quotes.
+
+- Embedded Expressions (Interpolation): You can embed variables or JavaScript expressions directly within a template literal using the syntax ${expression}. The expression inside the curly braces will be evaluated and its result inserted into the string.
+
+- Simple Example
+
+     ``` javascript
 
         let msg = `Hello ${name}`
 
-    ```
+     ```
 
 ---
 
 ## 21. Default Parameters
 
-    ``` javascript
+- Default parameters in JavaScript allow you to initialize function parameters with default values if no value or undefined is passed for those parameters when the function is called.
+
+- Simple Example
+
+   ``` javascript
 
         function greet(name="guest"){}
 
-    ```
+   ```
 
 ---
 
 ## 22. Destructuring
 
-    ``` javascript
+- It allows you to unpack values from arrays or properties from objects into distinct variables. 
+- It provides a more concise and readable way to extract data compared to traditional methods.
+
+- Simple Example
+
+     ``` javascript
 
         const {name, age} = person
 
-    ```
+     ```
 
 ---
 
 ## 23. Closures
+
+- A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). 
+- In other words, a closure gives a function access to its outer scope.
+
+- Simple Example
 
     ``` javascript
 
@@ -352,6 +401,7 @@
 ---
 
 ## 24. Arrow vs Regular Functions
+
     | Arrow | Regular |
     | ----- | ------- |
     | No this binding |	Own this |
@@ -360,6 +410,11 @@
 ---
 
 ## 25. === vs ==
+
+- '==' : Before comparing values, the == operator attempts to convert one or both operands to a common type if their types differ.
+- '===' : The === operator compares values without attempting any type conversions.
+
+- Example
 
     ``` javascript
 
@@ -371,6 +426,7 @@
 ---
 
 ## 26. null vs undefined
+
     | null | undefined |
     | ---- | --------- |
     | intentional empty | not assigned |
@@ -378,6 +434,11 @@
 ---
 
 ## 27. Modules
+
+- JavaScript modules provide a standardized way to organize and structure code into reusable, independent units. 
+- This modular approach enhances code maintainability, reusability, and overall project organization, especially in larger applications.
+
+- Example
 
     ``` javascript
 
@@ -390,11 +451,16 @@
 
 ## 28. Console Methods
 
-    ``` javascript
+- The console object in JavaScript provides various methods for interacting with the browser's debugging console. 
+- These methods are essential for debugging, logging information, and analyzing code execution.
+
+- Simple Example
+
+     ``` javascript
 
         console.log(), console.error(), console.warn(), console.table()
 
-    ```
+     ```
 
 ---
 
@@ -409,6 +475,11 @@
 
 ## 30. Passing Functions to Functions
 
+- In JavaScript, functions are "first-class citizens," meaning they can be treated like any other value, such as a number or a string. 
+- This allows you to pass functions as arguments to other functions, a powerful concept known as callbacks or higher-order functions.
+
+- Simple Example
+
     ``` javascript
 
         function execute(fn){ fn(); }
@@ -420,6 +491,11 @@
 
 ## 31. Named vs Anonymous Functions
 
+- An anonymous function is something that is declared without an identification.
+- Named functions are simply a way of referring to a function that employs the function keyword followed by a name that can be used as a callback to that function.
+
+- Simple Example
+
     ``` javascript
 
         function named(){}
@@ -430,6 +506,11 @@
 ---
 
 ## 32. Variable Number of Arguments
+
+- The "variable names" for arguments passed to a function are referred to as parameters. 
+- These parameters are defined within the parentheses of a function declaration.
+
+- Simple Example
 
     ``` javascript
 
@@ -447,3 +528,15 @@
 - read stack trace daily
 
 ---
+
+## References
+
+- https://developer.mozilla.org/en-US/docs/Glossary/Truthy
+- https://www.geeksforgeeks.org/javascript/pass-by-value-and-pass-by-reference-in-javascript/
+- https://developer.mozilla.org
+- https://medium.com/@abhishekmaran/7-essential-javascript-utility-functions-for-your-web-projects-3f9227e0b4f7
+- https://www.geeksforgeeks.org/javascript/javascript-string-methods/
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions
+- https://www.geeksforgeeks.org/javascript/difference-between-anonymous-and-named-functions-in-javascript/
