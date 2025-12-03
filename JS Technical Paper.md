@@ -103,7 +103,7 @@
 
 - Truthy Values:
 
-    -In JavaScript, a truthy value is a value that is considered true when encountered in a Boolean context.
+    - In JavaScript, a truthy value is a value that is considered true when encountered in a Boolean context.
     - Everything else (e.g., "Hello", [], {}, 1)
 
 - Simple Example
